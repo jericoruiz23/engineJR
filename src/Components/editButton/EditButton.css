@@ -1,0 +1,45 @@
+.Btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80px;
+    height: 28px;
+    border: none;
+    padding: 0px 10px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid #57bd9e;
+    /* Añadimos el borde con el color especificado */
+    transition-duration: .3s;
+}
+
+.svg {
+    width: 12px;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    fill: rgb(0, 0, 0);
+    transition-duration: .3s;
+}
+
+.Btn:hover {
+    color: transparent;
+}
+
+.Btn:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+}
+
+.Btn:active {
+    transform: translate(3px, 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px #57bd9e
+}
